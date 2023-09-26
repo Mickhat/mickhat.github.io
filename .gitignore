@@ -1,11 +1,11 @@
 # Bundler cache
 .bundle
 vendor
-Gemfile.lock
+#Gemfile.lock
 
 # Jekyll cache
 .jekyll-cache
-_site
+#_site
 
 # RubyGems
 *.gem
