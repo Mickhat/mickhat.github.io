@@ -1,9 +1,9 @@
 
 
 {
-  "name": "Chirpy",
-  "short_name": "Chirpy",
-  "description": "A minimal, responsive and feature-rich Jekyll theme for technical writing.",
+  "name": "Mickhat.xyz",
+  "short_name": "Mickhat.xyz",
+  "description": "A Personal Techblog where I'll publish tutorials or personal impressions on this site.",
   "icons": [
     {
       "src": "/assets/img/favicons/android-chrome-192x192.png",
