@@ -17,7 +17,11 @@ const resource = [
   
     '/archives/',
   
-    '/about/',
+    '/about-&-Support/',
+  
+    '/PGP-Key/',
+  
+    '/Imprint/',
   
 
   /* --- Favicons & compressed JS --- */

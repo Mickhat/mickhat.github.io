@@ -39,24 +39,25 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="404: Page not found" />
+<meta property="og:title" content="Crowdsec installation and basic setup" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="A minimal, responsive and feature-rich Jekyll theme for technical writing." />
-<meta property="og:description" content="A minimal, responsive and feature-rich Jekyll theme for technical writing." />
-<link rel="canonical" href="/404.html" />
-<meta property="og:url" content="/404.html" />
+<meta name="description" content="Installing CrowdSec: A Fail2Ban Alternative for Your Server" />
+<meta property="og:description" content="Installing CrowdSec: A Fail2Ban Alternative for Your Server" />
+<link rel="canonical" href="/posts/2023-03-26-install-crowdsec/" />
+<meta property="og:url" content="/posts/2023-03-26-install-crowdsec/" />
 <meta property="og:site_name" content="Chirpy" />
-<meta property="og:type" content="website" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-03-25T23:00:00+01:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="404: Page not found" />
+<meta property="twitter:title" content="Crowdsec installation and basic setup" />
 <meta name="twitter:site" content="@twitter_username" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"A minimal, responsive and feature-rich Jekyll theme for technical writing.","headline":"404: Page not found","url":"/404.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-03-25T23:00:00+01:00","datePublished":"2023-03-25T23:00:00+01:00","description":"Installing CrowdSec: A Fail2Ban Alternative for Your Server","headline":"Crowdsec installation and basic setup","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/2023-03-26-install-crowdsec/"},"url":"/posts/2023-03-26-install-crowdsec/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>404: Page not found | Chirpy
+  <title>Crowdsec installation and basic setup | Chirpy
   </title>
 
   <!--
@@ -107,6 +108,8 @@
 
   <link rel="stylesheet" href="/assets/css/jekyll-theme-chirpy.css">
 
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.21.1/dist/tocbot.min.css">
   
 
   
@@ -482,8 +485,10 @@
           
         
           
+        
+          
             
-              <span>404: Page not found</span>
+              <span>Crowdsec installation and basic setup</span>
             
 
           
@@ -497,7 +502,7 @@
     </button>
 
     <div id="topbar-title">
-      404: Page not found
+      Post
     </div>
 
     <button type="button" id="search-trigger" class="btn btn-link">
@@ -523,19 +528,13 @@
         <div class="row">
           <main
             aria-label="Main Content"
-            class="col-12 col-lg-11 col-xl-9 px-md-4 pb-5"
+            class="col-12 col-lg-11 col-xl-9 px-md-4"
           >
             
 
 <article class="px-1">
   
     
-    
-    <h1 class="dynamic-title">
-      404: Page not found
-    </h1>
-    <div class="content">
-      
   
     <!-- Refactor the HTML structure -->
 
@@ -578,9 +577,163 @@
   
 
   
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+
+    
+
+  
 
   
   
+
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+
+    
 
   
 
@@ -602,12 +755,335 @@
 
 
 
-<p class="lead">Sorry, we've misplaced that URL or it's pointing to something that doesn't exist.</p>
+<header>
+  <h1 data-toc-skip>Crowdsec installation and basic setup</h1>
+
+  <div class="post-meta text-muted">
+    <!-- published date -->
+    <span>
+      Posted
+      <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1679781600"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  Mar 25, 2023
+</time>
+
+    </span>
+
+    <!-- lastmod date -->
+    
+
+    
+
+    <div class="d-flex justify-content-between">
+      <!-- author(s) -->
+      <span>
+        
+
+        By
+
+        <em>
+          
+            <a href="https://twitter.com/username">your_full_name</a>
+          
+        </em>
+      </span>
+
+      <!-- read time -->
+      <!-- Calculate the post's reading time, and display the word count in tooltip -->
+
+
+
+<!-- words per minute -->
+
+
+
+
+
+
+
+
+
+
+<!-- return element -->
+<span
+  class="readtime"
+  data-bs-toggle="tooltip"
+  data-bs-placement="bottom"
+  title="610 words"
+>
+  <em>3 min</em> read</span>
+
+    </div>
+    <!-- .d-flex -->
+  </div>
+  <!-- .post-meta -->
+</header>
+
+<div class="content">
+  <h1 id="installing-crowdsec-a-fail2ban-alternative-for-your-server">Installing CrowdSec: A Fail2Ban Alternative for Your Server</h1>
+
+<p>In this blog post, I’m going to show you how to install and use CrowdSec as a great alternative to Fail2Ban for protecting your server.  I’ve found CrowdSec to be an excellent solution and I’m excited to share it with you!</p>
+
+<h2 id="why-choose-crowdsec-over-fail2ban"><span class="me-2">Why Choose CrowdSec Over Fail2Ban?</span><a href="#why-choose-crowdsec-over-fail2ban" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>CrowdSec is an open-source security solution that helps protect your server from potential threats, just like Fail2Ban. However, there are some key advantages to using CrowdSec:</p>
+
+<ol>
+  <li><strong>Collaborative Defense:</strong> CrowdSec leverages a global community of users who share threat intelligence. When one user encounters an attack, the information is shared with the entire community, providing everyone with better protection.</li>
+  <li><strong>Ease of Use:</strong> CrowdSec has a user-friendly dashboard and an extensive set of plugins and integrations, making it easy to monitor and manage your security.</li>
+  <li><strong>Scalability:</strong> CrowdSec is designed to handle high traffic volumes, making it ideal for growing websites.</li>
+</ol>
+
+<p>With these benefits in mind, let’s dive into the installation process!</p>
+
+<h2 id="installing-crowdsec"><span class="me-2">Installing CrowdSec</span><a href="#installing-crowdsec" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>To install CrowdSec, simply follow the steps below. Please note that this tutorial assumes you’re using a Linux-based server.</p>
+
+<h3 id="step-1-update-your-system"><span class="me-2">Step 1: Update Your System</span><a href="#step-1-update-your-system" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>First, let’s make sure your system is up to date. Open your terminal and run the following commands:</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed=""><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="nb">sudo </span>apt-get update
+<span class="nb">sudo </span>apt-get upgrade
+</pre></td></tr></tbody></table></code></div></div>
+
+<h3 id="step-2-install-crowdsec"><span class="me-2">Step 2: Install CrowdSec</span><a href="#step-2-install-crowdsec" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>Now, let’s install CrowdSec using the following command:</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed=""><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>curl <span class="nt">-s</span> https://packagecloud.io/install/repositories/crowdsec/crowdsec/script.deb.sh | <span class="nb">sudo </span>bash
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>crowdsec
+</pre></td></tr></tbody></table></code></div></div>
+
+<h3 id="step-3-configure-crowdsec"><span class="me-2">Step 3: Configure CrowdSec</span><a href="#step-3-configure-crowdsec" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>After installation, you’ll need to configure CrowdSec. Run the following command to launch the configuration wizard:</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed=""><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">sudo </span>cscli <span class="nt">-c</span> /etc/crowdsec/config.yaml config setup
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Follow the prompts to set up your account and choose the appropriate plugins for your needs.</p>
+
+<h3 id="step-4-enable-and-start-crowdsec-service"><span class="me-2">Step 4: Enable and Start CrowdSec Service</span><a href="#step-4-enable-and-start-crowdsec-service" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>Finally, enable and start the CrowdSec service using these commands:</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed=""><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="nb">sudo </span>systemctl <span class="nb">enable </span>crowdsec
+<span class="nb">sudo </span>systemctl start crowdsec
+</pre></td></tr></tbody></table></code></div></div>
+
+<h2 id="using-crowdsec-bouncers"><span class="me-2">Using CrowdSec Bouncers</span><a href="#using-crowdsec-bouncers" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>CrowdSec bouncers are a crucial part of the system, as they enforce the security decisions made by CrowdSec. Bouncers can be thought of as agents that interact with various systems (like firewalls or web servers) to block malicious traffic based on the decisions made by CrowdSec.</p>
+
+<h3 id="installing-a-bouncer"><span class="me-2">Installing a Bouncer</span><a href="#installing-a-bouncer" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>To install a bouncer, you’ll first need to choose the right one for your needs. There are various bouncers available for different systems. In this tutorial, we’ll use the <code class="language-plaintext highlighter-rouge">crowdsec-firewall-bouncer</code> as an example, which works with both <code class="language-plaintext highlighter-rouge">iptables</code> and <code class="language-plaintext highlighter-rouge">nftables</code>.</p>
+
+<p>Install the bouncer by running the following commands:</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed=""><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>curl <span class="nt">-s</span> https://packagecloud.io/install/repositories/crowdsec/crowdsec-firewall-bouncer/script.deb.sh | <span class="nb">sudo </span>bash
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>crowdsec-firewall-bouncer
+</pre></td></tr></tbody></table></code></div></div>
+
+<h3 id="configuring-the-bouncer"><span class="me-2">Configuring the Bouncer</span><a href="#configuring-the-bouncer" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>After installing the bouncer, you’ll need to configure it. Edit the <code class="language-plaintext highlighter-rouge">/etc/crowdsec/bouncers/crowdsec-firewall-bouncer.yaml</code> configuration file using your preferred text editor:</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed=""><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">sudo </span>nano /etc/crowdsec/bouncers/crowdsec-firewall-bouncer.yaml
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>In the configuration file, update the <code class="language-plaintext highlighter-rouge">api_url</code> and <code class="language-plaintext highlighter-rouge">api_key</code> with the correct values. You can find your API key by running the following command:</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed=""><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">sudo </span>cscli bouncers list
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Your API key will be displayed in the <code class="language-plaintext highlighter-rouge">Key</code> column of the output.</p>
+
+<p>Make sure to also configure the <code class="language-plaintext highlighter-rouge">mode</code> parameter according to your system’s firewall. Set the value to <code class="language-plaintext highlighter-rouge">iptables</code> or <code class="language-plaintext highlighter-rouge">nftables</code>, depending on your setup.</p>
+
+<h3 id="enabling-and-starting-the-bouncer"><span class="me-2">Enabling and Starting the Bouncer</span><a href="#enabling-and-starting-the-bouncer" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>Once you have configured the bouncer, enable and start the service with the following commands:</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed=""><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="nb">sudo </span>systemctl <span class="nb">enable </span>crowdsec-firewall-bouncer
+<span class="nb">sudo </span>systemctl start crowdsec-firewall-bouncer
+</pre></td></tr></tbody></table></code></div></div>
+
+<h2 id="conclusion"><span class="me-2">Conclusion</span><a href="#conclusion" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Congratulations! You’ve successfully installed CrowdSec and a bouncer as a Fail2Ban alternative for your server. With CrowdSec and its bouncers in place, you can enjoy better security, ease of use, and scalability for your Server.</p>
+
+<p>I hope you found this tutorial helpful, and if you have any questions or run into any issues, feel free to email me or drop me a message on Discord.</p>
+
+<p>Cheers!</p>
+
+
+</div>
+
+<div class="post-tail-wrapper text-muted">
+  <!-- categories -->
+  
+    <div class="post-meta mb-3">
+      <i class="far fa-folder-open fa-fw me-1"></i>
+      
+        <a href="/categories/blue-team/">Blue Team</a>,
+        <a href="/categories/crowdsec/">CrowdSec</a>
+    </div>
+  
+
+  <!-- tags -->
+  
+    <div class="post-tags">
+      <i class="fa fa-tags fa-fw me-1"></i>
+      
+        <a
+          href="/tags/blue-team/"
+          class="post-tag no-text-decoration"
+        >Blue Team</a>
+      
+        <a
+          href="/tags/crowdsec/"
+          class="post-tag no-text-decoration"
+        >CrowdSec</a>
+      
+    </div>
+  
+
+  <div
+    class="
+      post-tail-bottom
+      d-flex justify-content-between align-items-center mt-5 pb-2
+    "
+  >
+    <div class="license-wrapper">
+      
+        
+
+        This post is licensed under 
+        <a href="https://creativecommons.org/licenses/by/4.0/">
+          CC BY 4.0
+        </a>
+         by the author.
+      
+    </div>
+
+    <!-- Post sharing snippet -->
+
+<div class="share-wrapper d-flex align-items-center">
+  <span class="share-label text-muted me-1">Share</span>
+  <span class="share-icons">
+    
+    
+    
+
+    
+      
+      <a
+        href="https://twitter.com/intent/tweet?text=Crowdsec%20installation%20and%20basic%20setup%20-%20Chirpy&url=%2Fposts%2F2023-03-26-install-crowdsec%2F"
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="Twitter"
+        target="_blank"
+        rel="noopener"
+        aria-label="Twitter"
+      >
+        <i class="fa-fw fa-brands fa-square-x-twitter"></i>
+      </a>
+    
+      
+      <a
+        href="https://www.facebook.com/sharer/sharer.php?title=Crowdsec%20installation%20and%20basic%20setup%20-%20Chirpy&u=%2Fposts%2F2023-03-26-install-crowdsec%2F"
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="Facebook"
+        target="_blank"
+        rel="noopener"
+        aria-label="Facebook"
+      >
+        <i class="fa-fw fab fa-facebook-square"></i>
+      </a>
+    
+      
+      <a
+        href="https://t.me/share/url?url=%2Fposts%2F2023-03-26-install-crowdsec%2F&text=Crowdsec%20installation%20and%20basic%20setup%20-%20Chirpy"
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="Telegram"
+        target="_blank"
+        rel="noopener"
+        aria-label="Telegram"
+      >
+        <i class="fa-fw fab fa-telegram"></i>
+      </a>
+    
+
+    <button
+      id="copy-link"
+      aria-label="Copy link"
+      class="btn small"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      title="Copy link"
+      data-title-succeed="Link copied successfully!"
+    >
+      <i class="fa-fw fas fa-link pe-none"></i>
+    </button>
+  </span>
+</div>
+
+  </div>
+  <!-- .post-tail-bottom -->
+</div>
+<!-- div.post-tail-wrapper -->
 
 
   
 
-    </div>
   
 </article>
 
@@ -923,12 +1399,162 @@
             </div>
 
             
+              
+              
+
+
+
+  <section id="toc-wrapper" class="ps-0 pe-4 mb-5">
+    <h2 class="panel-heading ps-3 pt-2 mb-2">Contents</h2>
+    <nav id="toc"></nav>
+  </section>
+
+
+            
           </aside>
         </div>
 
         <div class="row">
           <!-- tail -->
           <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
+            
+              
+                
+                <!-- Recommend the other 3 posts according to the tags and categories of the current post. -->
+
+<!-- The total size of related posts -->
+
+
+<!-- An random integer that bigger than 0 -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy} -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  <aside id="related-posts" aria-labelledby="related-label">
+    <h3 class="mb-4" id="related-label">Further Reading</h3>
+    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/btl1-review/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+    class="small"
+  
+  data-ts="1661207732"
+  data-df="ll"
+  
+>
+  Aug 23, 2022
+</time>
+
+              <h4 class="pt-0 my-2">Blue Team Level 1 Review</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  What is the Blue Team Level 1 Certificate?
+
+The BTL1 is an entry level certification into Blue Teaming. The course is created by Security Blue Team.
+
+In this course you will work your way through 6...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+    </nav>
+  </aside>
+  <!-- #related-posts -->
+
+
+              
+                
+                <!-- Navigation buttons at the bottom of the post. -->
+
+<nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation">
+  
+  
+
+  
+    <a
+      href="/posts/ejpt-exam-review/"
+      class="btn btn-outline-primary"
+      aria-label="Older"
+    >
+      <p>eJPT Exam Review</p>
+    </a>
+  
+
+  
+    <a
+      href="/posts/setting-up-a-samba-share/"
+      class="btn btn-outline-primary"
+      aria-label="Newer"
+    >
+      <p>Setting Up a Samba Share</p>
+    </a>
+  
+</nav>
+
+              
+                
+                <!--  The comments switcher -->
+
+
+              
             
 
             <!-- The Footer -->
@@ -1371,16 +1997,51 @@
 
   
 
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
 
 
-  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/lazysizes@5.3.2/lazysizes.min.js,npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/lazysizes@5.3.2/lazysizes.min.js,npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.9/dayjs.min.js,npm/dayjs@1.11.9/locale/en.min.js,npm/dayjs@1.11.9/plugin/relativeTime.min.js,npm/dayjs@1.11.9/plugin/localizedFormat.min.js,npm/tocbot@4.21.1/dist/tocbot.min.js"></script>
 
 
 
 
 
 
-<script defer src="/assets/js/dist/page.min.js"></script>
+<script defer src="/assets/js/dist/post.min.js"></script>
 
 
 

@@ -1,4 +1,106 @@
 [
   
+  {
+    "title": "Setting Up a Samba Share",
+    "url": "/posts/setting-up-a-samba-share/",
+    "categories": "Tutorials",
+    "tags": "Samba, SMB",
+    "date": "2023-04-29 22:57:00 +0200",
+    
+
+
+
+
+
+    
+    "snippet": "Setting Up a Samba Share with Port ForwardingIntroductionIn this beginner-friendly tutorial, I will guide you through setting up a Samba share with port forwarding. By the end, you will be able to ...",
+    "content": "Setting Up a Samba Share with Port ForwardingIntroductionIn this beginner-friendly tutorial, I will guide you through setting up a Samba share with port forwarding. By the end, you will be able to install and configure Samba on your Linux server, configure port forwarding on your router, and access the Samba share from your client device.PrerequisitesBefore we begin, ensure that you have the following:A Linux server (e.g., Ubuntu, CentOS, or Debian) with root or sudo access.A router with port forwarding capabilities.A client device (e.g., Windows, macOS, or Linux) to access the shared files.Step 1: Installing SambaFirst, we need to install Samba on the Linux server. Depending on your Linux distribution, the installation command may vary.For Ubuntu/Debian:sudo apt-get update &amp;&amp; sudo apt-get install samba For CentOS:sudo yum install epel-release &amp;&amp; sudo yum install samba Step 2: Configuring Samba ShareFirst, create a new directory for our Samba share, and set the appropriate permissions:sudo mkdir /srv/samba/share sudo chown mickhat:mickhat /srv/samba/share sudo chmod 777 /srv/samba/share Now, let’s create a backup of the original Samba configuration file and then edit the file:sudo cp /etc/samba/smb.conf /etc/samba/smb.conf.bak sudo vi /etc/samba/smb.conf Add the following configuration at the end of the file:[MyShare] path = /srv/samba/share read only = no browsable = yes valid users = mickhat create mask = 0777 directory mask = 0777 Save and close the file. Then, restart the Samba service:sudo systemctl restart smbd Step 3: Configuring Port ForwardingTo configure port forwarding on your router, follow these general steps:Log in to your router’s admin panel.Locate the “Port Forwarding” or “Virtual Servers” settings.Add a new rule with the following parameters:External Port: 445Internal Port: 445Protocol: TCPInternal IP Address: [Your Linux server’s local IP address]Save the configuration and reboot the router if required.Step 4: Accessing the Samba ShareFor Windows:Open File Explorer and enter the following in the address bar:\\\\[Your Linux server's public IP address]\\MyShareFor macOS:Open Finder, click on “Go” in the menu bar, and select “Connect to Server.”Enter the following:smb://[Your Linux server's public IP address]/MyShareFor Linux:Open your file manager and connect to the share using the following address:smb://[Your Linux server's public IP address]/MyShareConclusionCongratulations! You have successfully set up a Samba share with port forwarding. Now you can easily share files between your devices, even when they are not on the same local network."
+  },
+  
+  {
+    "title": "Crowdsec installation and basic setup",
+    "url": "/posts/2023-03-26-install-crowdsec/",
+    "categories": "Blue Team, CrowdSec",
+    "tags": "Blue Team, CrowdSec",
+    "date": "2023-03-25 23:00:00 +0100",
+    
+
+
+
+
+
+    
+    "snippet": "Installing CrowdSec: A Fail2Ban Alternative for Your ServerIn this blog post, I’m going to show you how to install and use CrowdSec as a great alternative to Fail2Ban for protecting your server.  I...",
+    "content": "Installing CrowdSec: A Fail2Ban Alternative for Your ServerIn this blog post, I’m going to show you how to install and use CrowdSec as a great alternative to Fail2Ban for protecting your server.  I’ve found CrowdSec to be an excellent solution and I’m excited to share it with you!Why Choose CrowdSec Over Fail2Ban?CrowdSec is an open-source security solution that helps protect your server from potential threats, just like Fail2Ban. However, there are some key advantages to using CrowdSec:  Collaborative Defense: CrowdSec leverages a global community of users who share threat intelligence. When one user encounters an attack, the information is shared with the entire community, providing everyone with better protection.  Ease of Use: CrowdSec has a user-friendly dashboard and an extensive set of plugins and integrations, making it easy to monitor and manage your security.  Scalability: CrowdSec is designed to handle high traffic volumes, making it ideal for growing websites.With these benefits in mind, let’s dive into the installation process!Installing CrowdSecTo install CrowdSec, simply follow the steps below. Please note that this tutorial assumes you’re using a Linux-based server.Step 1: Update Your SystemFirst, let’s make sure your system is up to date. Open your terminal and run the following commands:sudo apt-get updatesudo apt-get upgradeStep 2: Install CrowdSecNow, let’s install CrowdSec using the following command:curl -s https://packagecloud.io/install/repositories/crowdsec/crowdsec/script.deb.sh | sudo bashsudo apt-get install crowdsecStep 3: Configure CrowdSecAfter installation, you’ll need to configure CrowdSec. Run the following command to launch the configuration wizard:sudo cscli -c /etc/crowdsec/config.yaml config setupFollow the prompts to set up your account and choose the appropriate plugins for your needs.Step 4: Enable and Start CrowdSec ServiceFinally, enable and start the CrowdSec service using these commands:sudo systemctl enable crowdsecsudo systemctl start crowdsecUsing CrowdSec BouncersCrowdSec bouncers are a crucial part of the system, as they enforce the security decisions made by CrowdSec. Bouncers can be thought of as agents that interact with various systems (like firewalls or web servers) to block malicious traffic based on the decisions made by CrowdSec.Installing a BouncerTo install a bouncer, you’ll first need to choose the right one for your needs. There are various bouncers available for different systems. In this tutorial, we’ll use the crowdsec-firewall-bouncer as an example, which works with both iptables and nftables.Install the bouncer by running the following commands:curl -s https://packagecloud.io/install/repositories/crowdsec/crowdsec-firewall-bouncer/script.deb.sh | sudo bashsudo apt-get install crowdsec-firewall-bouncerConfiguring the BouncerAfter installing the bouncer, you’ll need to configure it. Edit the /etc/crowdsec/bouncers/crowdsec-firewall-bouncer.yaml configuration file using your preferred text editor:sudo nano /etc/crowdsec/bouncers/crowdsec-firewall-bouncer.yamlIn the configuration file, update the api_url and api_key with the correct values. You can find your API key by running the following command:sudo cscli bouncers listYour API key will be displayed in the Key column of the output.Make sure to also configure the mode parameter according to your system’s firewall. Set the value to iptables or nftables, depending on your setup.Enabling and Starting the BouncerOnce you have configured the bouncer, enable and start the service with the following commands:sudo systemctl enable crowdsec-firewall-bouncersudo systemctl start crowdsec-firewall-bouncerConclusionCongratulations! You’ve successfully installed CrowdSec and a bouncer as a Fail2Ban alternative for your server. With CrowdSec and its bouncers in place, you can enjoy better security, ease of use, and scalability for your Server.I hope you found this tutorial helpful, and if you have any questions or run into any issues, feel free to email me or drop me a message on Discord.Cheers!"
+  },
+  
+  {
+    "title": "eJPT Exam Review",
+    "url": "/posts/ejpt-exam-review/",
+    "categories": "Review, eJPT, Red Team, eLearnSecurity",
+    "tags": "eJPT, exam, review, eLearnSecurity",
+    "date": "2022-10-05 23:58:26 +0200",
+    
+
+
+
+
+
+    
+    "snippet": "What is eJPTThe eLearnSecurity Junior Penetration Tester (eJPT) is a 100% practical certification focused on penetration testing and the essentials of information security. By passing the exam, you...",
+    "content": "What is eJPTThe eLearnSecurity Junior Penetration Tester (eJPT) is a 100% practical certification focused on penetration testing and the essentials of information security. By passing the exam, you prove to employers that you have the skills necessary to serve as an entry level cyber security employee.      Exam Certificate Voucher Price: $200 (the training is not included in this price).        Training: provided by INE.        Duration: the exam took me around 5 hours and I passed with a score of 90%.  I have previous cyber security experience and decided to not complete the prep course before finishing the exam. As a reflection of this, my overview will be brief.OverviewThe course instructor was Lukasz Mikula. He helps you work through penetration testing basics as well as some programming skills.The course prep teaches networking, routing, ARP spoofing, and more. I found the individual course modules to be both fun and enjoyable.The course also provides “eJPT Exam Preperation”, which includes three instructional videos and two labs for you to solve. Students learn basics as well as an intro to buffer overflow.One downside I recognized is the outdated content, which I believe is from around 2019. They already have updates in the works and a new version of the course is currently in beta.Since this is a small review, I will finish for now and possibly add more in the future.  This is the certificate I received for completing the exam."
+  },
+  
+  {
+    "title": "My Cloudlab",
+    "url": "/posts/my-cloudlab/",
+    "categories": "",
+    "tags": "",
+    "date": "2022-08-27 11:48:57 +0200",
+    
+
+
+
+
+
+    
+    "snippet": "Quick OverviewSince i rented a dedicated Server from Hetzner, i want to build a small cloud lab.The current setup is proxmox as the base and my website is running as a Kernel-based Virtual Machine....",
+    "content": "Quick OverviewSince i rented a dedicated Server from Hetzner, i want to build a small cloud lab.The current setup is proxmox as the base and my website is running as a Kernel-based Virtual Machine. In this VM i run a webserver and a docker container server. And of course, some more or less useful things which i don’t expose for now.Future GoalsMy future goal with my “Cloud Lab” is provide better tutorials and maybe some small projects for some communities like Hack The Box or Florian Dalwigk. The Community from Florian is german, so be warned 😛.So i’m unsure about my next tutorial yet but stay tuned!"
+  },
+  
+  {
+    "title": "Blue Team Level 1 Review",
+    "url": "/posts/btl1-review/",
+    "categories": "Review, BTL1, Blue Team",
+    "tags": "Blue Team, exam, review",
+    "date": "2022-08-23 00:35:32 +0200",
+    
+
+
+
+
+
+    
+    "snippet": "What is the Blue Team Level 1 Certificate?The BTL1 is an entry level certification into Blue Teaming. The course is created by Security Blue Team.In this course you will work your way through 6 Dom...",
+    "content": "What is the Blue Team Level 1 Certificate?The BTL1 is an entry level certification into Blue Teaming. The course is created by Security Blue Team.In this course you will work your way through 6 Domains. It also covers security fundamentals which are mandatory in order to complete the course. While I don’t deep dive into the Domains, let’s go ahead and start with my short review.Course OverviewAs I said before you will go through the Security Fundamentals Domain where you learn a basic skillset for Networking and Physical Security. One big takeaway is that you get an introduction with basic networking.The Phishing Analysis Domain stood out to me because you learn how emails work and how to identify phishing emails. I was impressed with just how thorough this Domain was.Next is the Threat Intelligence Domain where you learn about threat actors. You examine threat actor goals, get an intro to APTs, and how to use the MITRE ATT&amp;CK Framework.My favorite was the Digital Forensics Domain. In this Domain you break down the DFIR (Digital Forensics Incident Response) process. It covers tools can you use, some hardware that exists to make your life easier, how to create a disk image or memory dump, and analyzing the collected information for Linux and Windows.The SIEM (Security Information and Event Monitoring) Domain was the hardest for me because I had no prior experience with SIEM. At first the labs for each Domain were hard, but as I became more familiar with Splunk they became more manageable. Unfortunately, there aren’t any labs with open source software alternatives.Last but not least, is the Incident Response Domain. This section teaches you how you defend your company and respond to attacks. You’ll learn the steps to take during an incident, and cover some basics of CMD and Powershell, which are vital in this field.ExamYou are given 24 hours to complete the exam. Don’t rush and be sure to double check your answers. You have enough time. It took me around 4.5 hours to complete the exam and I passed with 85%. I had some minor mistakes but in the end no one will ask for the failures (I hope).I took the exam on the 20th July 2022 and I am still waiting as of August 18th 2022 for my physical certificate to arrive.Update: My Physical Certifacte arrived on the 30th September 2022."
+  },
+  
+  {
+    "title": "Whoami",
+    "url": "/posts/whoami/",
+    "categories": "",
+    "tags": "",
+    "date": "2022-08-23 00:28:30 +0200",
+    
+
+
+
+
+
+    
+    "snippet": "Whoami?My Name is Michael, i’m 35 years old now. I’m working for Hack The Box and i really love it! side fact: I’m working for HTB since july 2020. In the meantime i rented a dedicated server to de...",
+    "content": "Whoami?My Name is Michael, i’m 35 years old now. I’m working for Hack The Box and i really love it! side fact: I’m working for HTB since july 2020. In the meantime i rented a dedicated server to deliver more tutorials ( i hope!).some small facts:  I recently passed the BTL1 exam and i’m doing oscp this year too.  I really love to chat at the HTB discord.  I’ve a 1337 tattoo on my knuckles (I’ll post a photo soon™)  I’m German!What is Hack The Box?You maybe know or maybe not know what Hack The Box is.Hack The Box is a massive, online cybersecurity training platform, allowing individuals, companies, universities and all kinds of organizations around the world to level up their hacking skills.If you want to learn hacking i can highly recommend you to start with the Academy.After you’ve done some modules, like Introduction to Academy you can start with some Linux Fundamentals. If you want to dive directly into some retired machines, i recommend you the videos from ippsec. He also have a great search engine on his homepage.This is just a quick way to say that i’m still alive!If you want to chat with me, contact me either on Discord(Mickhat) or email me to root(at)mickhat(dot)xyz.Much love you all and we’ll see us!"
+  }
+  
 ]
 

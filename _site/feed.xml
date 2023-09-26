@@ -4,7 +4,7 @@
   <id>/</id>
   <title>Chirpy</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-09-26T14:10:57+02:00</updated>
+  <updated>2023-09-26T14:22:04+02:00</updated>
   <author>
     <name>your_full_name</name>
     <uri>/</uri>
@@ -17,6 +17,220 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Setting Up a Samba Share</title>
+    <link href="/posts/setting-up-a-samba-share/" rel="alternate" type="text/html" title="Setting Up a Samba Share" />
+    <published>2023-04-29T22:57:00+02:00</published>
+  
+    <updated>2023-04-29T22:57:00+02:00</updated>
+  
+    <id>/posts/setting-up-a-samba-share/</id>
+    <content src="/posts/setting-up-a-samba-share/" />
+    <author>
+      <name>your_full_name</name>
+    </author>
+
+  
+    
+    <category term="Tutorials" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Setting Up a Samba Share with Port Forwarding
+
+Introduction
+
+In this beginner-friendly tutorial, I will guide you through setting up a Samba share with port forwarding. By the end, you will be able to install and configure Samba on your Linux server, configure port forwarding on your router, and access the Samba share from your client device.
+
+Prerequisites
+
+Before we begin, ensure that you hav...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Crowdsec installation and basic setup</title>
+    <link href="/posts/2023-03-26-install-crowdsec/" rel="alternate" type="text/html" title="Crowdsec installation and basic setup" />
+    <published>2023-03-25T23:00:00+01:00</published>
+  
+    <updated>2023-03-25T23:00:00+01:00</updated>
+  
+    <id>/posts/2023-03-26-install-crowdsec/</id>
+    <content src="/posts/2023-03-26-install-crowdsec/" />
+    <author>
+      <name>your_full_name</name>
+    </author>
+
+  
+    
+    <category term="Blue Team" />
+    
+    <category term="CrowdSec" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Installing CrowdSec: A Fail2Ban Alternative for Your Server
+
+In this blog post, I’m going to show you how to install and use CrowdSec as a great alternative to Fail2Ban for protecting your server.  I’ve found CrowdSec to be an excellent solution and I’m excited to share it with you!
+
+Why Choose CrowdSec Over Fail2Ban?
+
+CrowdSec is an open-source security solution that helps protect your server ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>eJPT Exam Review</title>
+    <link href="/posts/ejpt-exam-review/" rel="alternate" type="text/html" title="eJPT Exam Review" />
+    <published>2022-10-05T23:58:26+02:00</published>
+  
+    <updated>2022-10-05T23:58:26+02:00</updated>
+  
+    <id>/posts/ejpt-exam-review/</id>
+    <content src="/posts/ejpt-exam-review/" />
+    <author>
+      <name>your_full_name</name>
+    </author>
+
+  
+    
+    <category term="Review" />
+    
+    <category term="eJPT" />
+    
+    <category term="Red Team" />
+    
+    <category term="eLearnSecurity" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      What is eJPT
+
+The eLearnSecurity Junior Penetration Tester (eJPT) is a 100% practical certification focused on penetration testing and the essentials of information security. By passing the exam, you prove to employers that you have the skills necessary to serve as an entry level cyber security employee.
+
+
+  
+    Exam Certificate Voucher Price: $200 (the training is not included in this price)....
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>My Cloudlab</title>
+    <link href="/posts/my-cloudlab/" rel="alternate" type="text/html" title="My Cloudlab" />
+    <published>2022-08-27T11:48:57+02:00</published>
+  
+    <updated>2022-08-27T11:48:57+02:00</updated>
+  
+    <id>/posts/my-cloudlab/</id>
+    <content src="/posts/my-cloudlab/" />
+    <author>
+      <name>your_full_name</name>
+    </author>
+
+  
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Quick Overview
+
+Since i rented a dedicated Server from Hetzner, i want to build a small cloud lab.
+The current setup is proxmox as the base and my website is running as a Kernel-based Virtual Machine. 
+In this VM i run a webserver and a docker container server. And of course, some more or less useful things which i don’t expose for now.
+
+Future Goals
+
+My future goal with my “Cloud Lab” is provi...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Blue Team Level 1 Review</title>
+    <link href="/posts/btl1-review/" rel="alternate" type="text/html" title="Blue Team Level 1 Review" />
+    <published>2022-08-23T00:35:32+02:00</published>
+  
+    <updated>2022-08-23T00:35:32+02:00</updated>
+  
+    <id>/posts/btl1-review/</id>
+    <content src="/posts/btl1-review/" />
+    <author>
+      <name>your_full_name</name>
+    </author>
+
+  
+    
+    <category term="Review" />
+    
+    <category term="BTL1" />
+    
+    <category term="Blue Team" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      What is the Blue Team Level 1 Certificate?
+
+The BTL1 is an entry level certification into Blue Teaming. The course is created by Security Blue Team.
+
+In this course you will work your way through 6 Domains. It also covers security fundamentals which are mandatory in order to complete the course. While I don’t deep dive into the Domains, let’s go ahead and start with my short review.
+
+Course Ove...
+    </summary>
+  
+
+  </entry>
 
 </feed>
 
