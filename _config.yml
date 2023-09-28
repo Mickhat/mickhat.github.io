@@ -84,7 +84,7 @@ theme_mode:   # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: '/img/me.jpeg'
+avatar: '/assets/me.jpeg'
 
 # boolean type, the global switch for ToC in posts.
 toc: true
@@ -202,10 +202,22 @@ jekyll-archives:
     category: /categories/:name/
 
 
-#plugins:
-#  - jekyll-analytics
+plugins:
+  - jekyll-analytics
 
-#jekyll_analytics:
-#  GoogleAnalytics:          # Add, if you want to track with Google Analytics
-#    id: UA-135474168-1          # Required - replace with your tracking id
-#    anonymizeIp: true      # Optional - Default: false - set to true for anonymized tracking
+jekyll_analytics:
+  # Matomo Analytics Configuration
+  Matomo:
+    # URL to Matomo installation (without trailing slash)
+    url: http://matomo.mickhat.xyz
+    
+    # Matomo site id (Ensure the id is written as a string)
+    siteId: "1"
+
+  # Uncomment below lines if you want to track with Google Analytics
+  # GoogleAnalytics:
+  #   # Your Google Analytics tracking id
+  #   id: UA-135474168-1
+  #
+  #   # Set to true for anonymized tracking (Default: false)
+  #   anonymizeIp: true

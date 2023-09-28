@@ -21,8 +21,14 @@ order: 4
 >
 >[Amazon Wishlist(DE)](https://www.amazon.de/hz/wishlist/ls/YN7CENNUSLWM)<br>[Amazon Wishlist(US)](https://www.amazon.com/hz/wishlist/ls/2B1F1V4ED5THR/)
 ><br>[Paypal](https://paypal.me/mickhat)<br>
-[Hetzner Cloud](https://hetzner.cloud/?ref=rVvygaZ05Y6e)<br>
->
-><br>[Hack The Box (Ref link)](https://affiliate.hackthebox.com/mickhat1337)
-><br>[Hack The Box Academy Platform (Ref Link)](https://affiliate.hackthebox.com/mickhat)
-><br><br>[<img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" width="150" height="150">](https://www.buymeacoffee.com/Mickhat)
+><br>[<img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" width="150" height="150">](https://www.buymeacoffee.com/Mickhat)
+
+{: .prompt-info }
+
+> Affiliate Links
+><br>[Hack The Box](https://affiliate.hackthebox.com/mickhat1337)
+><br>[Hack The Box Academy Platform](https://affiliate.hackthebox.com/mickhat)
+><br>[NordVPN](https://go.nordvpn.net/aff_c?offer_id=15&aff_id=93056&url_id=902)
+><br>[NordPass](https://go.nordpass.io/aff_c?offer_id=488&aff_id=93056&url_id=9356)
+><br>[NordLocker](https://go.nordlocker.net/aff_c?offer_id=489&aff_id=93056&url_id=14794)
+><br>[Hetzner Cloud](https://hetzner.cloud/?ref=rVvygaZ05Y6e)<br>
