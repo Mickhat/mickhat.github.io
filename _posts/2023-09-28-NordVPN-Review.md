@@ -1,7 +1,7 @@
 ---
 layout: post
 title: NordVPN Review
-date: '2022-08-23 00:35:32 +0200'
+date: '2023-09-29 10:30:00 +0200'
 categories: [Review, VPN, NordVPN]
 tags: [VPN, review]
 ---
@@ -9,7 +9,7 @@ tags: [VPN, review]
 
 **Affiliate disclosure:** I am an affiliate of NordVPN and earn a commission if you purchase a subscription through my link. This does not affect my review in any way, and I only recommend products and services that I believe in.
 
-## NordVPN Review (September 28, 2023)
+## NordVPN Review (September 29, 2023)
 
 ### Introduction
 
