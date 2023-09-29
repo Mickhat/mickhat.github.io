@@ -4,7 +4,7 @@
   <id>https://mickhat.xyz/</id>
   <title>Mickhat.xyz</title>
   <subtitle>A Personal Techblog where I'll publish tutorials or personal impressions on this site.</subtitle>
-  <updated>2023-09-28T12:19:58+02:00</updated>
+  <updated>2023-09-29T10:26:39+02:00</updated>
   <author>
     <name>Mickhat</name>
     <uri>https://mickhat.xyz/</uri>
@@ -190,14 +190,14 @@ My future goal with my “Cloud Lab” is provi...
 
   
   <entry>
-    <title>Blue Team Level 1 Review</title>
-    <link href="https://mickhat.xyz/posts/btl1-review/" rel="alternate" type="text/html" title="Blue Team Level 1 Review" />
+    <title>NordVPN Review</title>
+    <link href="https://mickhat.xyz/posts/NordVPN-Review/" rel="alternate" type="text/html" title="NordVPN Review" />
     <published>2022-08-23T00:35:32+02:00</published>
   
     <updated>2022-08-23T00:35:32+02:00</updated>
   
-    <id>https://mickhat.xyz/posts/btl1-review/</id>
-    <content src="https://mickhat.xyz/posts/btl1-review/" />
+    <id>https://mickhat.xyz/posts/NordVPN-Review/</id>
+    <content src="https://mickhat.xyz/posts/NordVPN-Review/" />
     <author>
       <name>Mickhat</name>
     </author>
@@ -206,9 +206,9 @@ My future goal with my “Cloud Lab” is provi...
     
     <category term="Review" />
     
-    <category term="BTL1" />
+    <category term="VPN" />
     
-    <category term="Blue Team" />
+    <category term="NordVPN" />
     
   
 
@@ -220,13 +220,15 @@ My future goal with my “Cloud Lab” is provi...
 
 
 
-      What is the Blue Team Level 1 Certificate?
+      Affiliate disclosure: I am an affiliate of NordVPN and earn a commission if you purchase a subscription through my link. This does not affect my review in any way, and I only recommend products and services that I believe in.
 
-The BTL1 is an entry level certification into Blue Teaming. The course is created by Security Blue Team.
+NordVPN Review (September 28, 2023)
 
-In this course you will work your way through 6 Domains. It also covers security fundamentals which are mandatory in order to complete the course. While I don’t deep dive into the Domains, let’s go ahead and start with my short review.
+Introduction
 
-Course Ove...
+
+
+NordVPN is a popular VPN provider that offers a variety of features to protect users’ privacy and security online. It...
     </summary>
   
 
