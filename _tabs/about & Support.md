@@ -8,7 +8,6 @@ order: 4
 > * I'm Michael, 36 years old
 > * I'm a tech lover  and i often break  things (including my OS)
 > * I have a 1337 tattoo on my knuckles
-> * Maintainer of [Hyprland-nvidia](https://aur.archlinux.org/packages/hyprland-nvidia)
 > * I'm German!
 > * Love you all ❤️
 {: .prompt-info }

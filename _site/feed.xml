@@ -1,19 +1,19 @@
 
 
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <id>https://mickhat.xyz/</id>
+  <id>http://localhost:4000/</id>
   <title>Mickhat.xyz</title>
   <subtitle>A Personal Techblog where I'll publish tutorials or personal impressions on this site.</subtitle>
-  <updated>2023-09-29T23:05:38+02:00</updated>
+  <updated>2024-02-11T02:00:04+01:00</updated>
   <author>
     <name>Mickhat</name>
-    <uri>https://mickhat.xyz/</uri>
+    <uri>http://localhost:4000/</uri>
   </author>
-  <link rel="self" type="application/atom+xml" href="https://mickhat.xyz/feed.xml"/>
+  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en"
-    href="https://mickhat.xyz/"/>
+    href="http://localhost:4000/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator>
-  <rights> © 2023 Mickhat </rights>
+  <rights> © 2024 Mickhat </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
@@ -21,13 +21,13 @@
   
   <entry>
     <title>NordVPN Review</title>
-    <link href="https://mickhat.xyz/posts/NordVPN-Review/" rel="alternate" type="text/html" title="NordVPN Review" />
+    <link href="http://localhost:4000/posts/NordVPN-Review/" rel="alternate" type="text/html" title="NordVPN Review" />
     <published>2023-09-29T10:30:00+02:00</published>
   
     <updated>2023-09-29T10:32:39+02:00</updated>
   
-    <id>https://mickhat.xyz/posts/NordVPN-Review/</id>
-    <content src="https://mickhat.xyz/posts/NordVPN-Review/" />
+    <id>http://localhost:4000/posts/NordVPN-Review/</id>
+    <content src="http://localhost:4000/posts/NordVPN-Review/" />
     <author>
       <name>Mickhat</name>
     </author>
@@ -67,13 +67,13 @@ NordVPN is a popular VPN provider that offers a variety of features to protect u
   
   <entry>
     <title>Setting Up a Samba Share</title>
-    <link href="https://mickhat.xyz/posts/setting-up-a-samba-share/" rel="alternate" type="text/html" title="Setting Up a Samba Share" />
+    <link href="http://localhost:4000/posts/setting-up-a-samba-share/" rel="alternate" type="text/html" title="Setting Up a Samba Share" />
     <published>2023-04-29T22:57:00+02:00</published>
   
     <updated>2023-04-29T22:57:00+02:00</updated>
   
-    <id>https://mickhat.xyz/posts/setting-up-a-samba-share/</id>
-    <content src="https://mickhat.xyz/posts/setting-up-a-samba-share/" />
+    <id>http://localhost:4000/posts/setting-up-a-samba-share/</id>
+    <content src="http://localhost:4000/posts/setting-up-a-samba-share/" />
     <author>
       <name>Mickhat</name>
     </author>
@@ -109,13 +109,13 @@ Before we begin, ensure that you hav...
   
   <entry>
     <title>Crowdsec installation and basic setup</title>
-    <link href="https://mickhat.xyz/posts/2023-03-26-install-crowdsec/" rel="alternate" type="text/html" title="Crowdsec installation and basic setup" />
+    <link href="http://localhost:4000/posts/2023-03-26-install-crowdsec/" rel="alternate" type="text/html" title="Crowdsec installation and basic setup" />
     <published>2023-03-25T23:00:00+01:00</published>
   
     <updated>2023-03-25T23:00:00+01:00</updated>
   
-    <id>https://mickhat.xyz/posts/2023-03-26-install-crowdsec/</id>
-    <content src="https://mickhat.xyz/posts/2023-03-26-install-crowdsec/" />
+    <id>http://localhost:4000/posts/2023-03-26-install-crowdsec/</id>
+    <content src="http://localhost:4000/posts/2023-03-26-install-crowdsec/" />
     <author>
       <name>Mickhat</name>
     </author>
@@ -151,13 +151,13 @@ CrowdSec is an open-source security solution that helps protect your server ...
   
   <entry>
     <title>eJPT Exam Review</title>
-    <link href="https://mickhat.xyz/posts/ejpt-exam-review/" rel="alternate" type="text/html" title="eJPT Exam Review" />
+    <link href="http://localhost:4000/posts/ejpt-exam-review/" rel="alternate" type="text/html" title="eJPT Exam Review" />
     <published>2022-10-05T23:58:26+02:00</published>
   
     <updated>2022-10-05T23:58:26+02:00</updated>
   
-    <id>https://mickhat.xyz/posts/ejpt-exam-review/</id>
-    <content src="https://mickhat.xyz/posts/ejpt-exam-review/" />
+    <id>http://localhost:4000/posts/ejpt-exam-review/</id>
+    <content src="http://localhost:4000/posts/ejpt-exam-review/" />
     <author>
       <name>Mickhat</name>
     </author>
@@ -197,13 +197,13 @@ The eLearnSecurity Junior Penetration Tester (eJPT) is a 100% practical certific
   
   <entry>
     <title>My Cloudlab</title>
-    <link href="https://mickhat.xyz/posts/my-cloudlab/" rel="alternate" type="text/html" title="My Cloudlab" />
+    <link href="http://localhost:4000/posts/my-cloudlab/" rel="alternate" type="text/html" title="My Cloudlab" />
     <published>2022-08-27T11:48:57+02:00</published>
   
     <updated>2022-08-27T11:48:57+02:00</updated>
   
-    <id>https://mickhat.xyz/posts/my-cloudlab/</id>
-    <content src="https://mickhat.xyz/posts/my-cloudlab/" />
+    <id>http://localhost:4000/posts/my-cloudlab/</id>
+    <content src="http://localhost:4000/posts/my-cloudlab/" />
     <author>
       <name>Mickhat</name>
     </author>
