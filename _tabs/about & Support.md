@@ -9,6 +9,7 @@ order: 4
 > * I'm a tech lover  and i often break  things (including my OS)
 > * I have a 1337 tattoo on my knuckles
 > * I'm German!
+> * I live near Berlin 
 > * Love you all ❤️
 {: .prompt-info }
 
