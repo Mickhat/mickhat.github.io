@@ -2,8 +2,7 @@
 layout: post
 title: Setting Up a Samba Share
 date: 2023-04-29 22:57 +0200
-categories:
-- Tutorials
+categories: [Tutorials, Samba Setup]
 tags:
 - Samba
 - SMB

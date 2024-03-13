@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "Macless Haystack for Findmy Flipper Setup",
+    "url": "/posts/Macless-Haystack/",
+    "categories": "Tutorials, Flipper Zero",
+    "tags": "Flipper Zero",
+    "date": "2024-03-11 08:30:00 +0100",
+    
+
+
+
+
+
+    
+    "snippet": "Setup Macless Haystack for Findmy Flipper SetupDisclaimer: I just describe the original instructions with my own words and added some screenshots and maybe some more steps for Windows and Linux (se...",
+    "content": "Setup Macless Haystack for Findmy Flipper SetupDisclaimer: I just describe the original instructions with my own words and added some screenshots and maybe some more steps for Windows and Linux (server) users.What is macless-haystack?This project tries to unify several projects for an easy-to-use and easy-to-setup custom FindMy network. The goal is to run a FindMy network without the need to own a real Mac or virtual Mac. Also you don’t have to install the mail plugin or openhaystack itself. (As needed by the original OpenHaystack project).You can find the Project on Github Macless-HaystackForewordIn this tutorial, I will guide you step by step through the process of setting up a Macless Haystack Server on both Windows and Linux using Docker. I’ll point out any differences in the setup process for Windows as we go along.I’d like to extend a huge thank you to my friend, AbeNaws, for providing me with a small server from Linode for this tutorial. The server specs are as follows:- 1 CPU Core- 25 GB Storage- 1 GB RAM  Linode throwed me some error, so i can’t recommedn it for now.Let’s begin the tutorial.PrerequisitesFirst, we need to install Docker on our Linux Server with the following command:sudo apt install docker.io python3   Download Docker for Windows and Python3 for Windows.Hardware setupWe  can now start with generating our keys. Let’s head over to the Github Repo from MatthewKuKanich and download the generate_keys.py file.Run the command with python3 generate_keys.py and answer the questions.  If you get an error, install the cryptography depency with pip3 install cryptography.Server SetupWith docker installed we create a new docker networkdocker network create mh-networkThen we will install the Anisette Server with this command:docker run -d --restart always --name anisette -p 6969:6969 --volume anisette-v3_data:/home/Alcoholic/.config/anisette-v3/lib/ --network mh-network dadoum/anisette-v3-serverStart and setup the Macless Haystack endpoint in interactive mode:docker run -it --restart unless-stopped --name macless-haystack -p 6176:6176 --volume mh_data:/app/endpoint/data --network mh-network christld/macless-haystack  You will be asked for your Apple ID and the your Password. Make sure that you have 2FA enabled since you will also need it.Once you can see serving at port 6176 over HTTP you have all setup correctly.Finally, restart the server in background by using a different terminal windowdocker restart macless-haystackFrontend setupYou can either use the pre hosted one on Github pages or host it on your own.You can find the webapplication here: Webapplication.zip.If you need to adjust the Macless Haystack endpoint, click on the gear icon on the top right corner and change the URL.To add a Flipper, click on the Accessories tab and select the + sign. Click import from JSON file and selecht the PREFIX_devices.json file.adding the .keys fileTo import the .keys file, plug in your flipper zero and go to the files browser. Now upload the .keys file to the apps_data/findmy folder.Questions?If you have any questions, please feel free to either contact me via X or on Discord. My name is Mickhat. Please make also sure to join the Discord of the Momentum Firmware"
+  },
+  
+  {
     "title": "iFixit Pro Tech Toolkit Review",
     "url": "/posts/ifixit-review/",
     "categories": "Review, Gadgets",
@@ -37,7 +54,7 @@
   {
     "title": "Setting Up a Samba Share",
     "url": "/posts/setting-up-a-samba-share/",
-    "categories": "Tutorials",
+    "categories": "Tutorials, Samba Setup",
     "tags": "Samba, SMB",
     "date": "2023-04-29 22:57:00 +0200",
     
