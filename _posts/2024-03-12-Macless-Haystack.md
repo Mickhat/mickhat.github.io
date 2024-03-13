@@ -30,7 +30,7 @@ I'd like to extend a huge thank you to my friend, AbeNaws, for providing me with
 - 1 GB RAM
 ```
 
->Linode throwed me some error, so i can't recommedn it for now.
+>Linode throwed me some error, so i can't recommend it for now.
 {: .prompt-info }
 
 
