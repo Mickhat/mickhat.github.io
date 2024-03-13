@@ -34,7 +34,7 @@ I'd like to extend a huge thank you to my friend, AbeNaws, for providing me with
 {: .prompt-info }
 
 
-Let's begin the tutorial.
+Let's begin.
 
 
 ## Prerequisites {#Prerequisites}
