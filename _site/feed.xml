@@ -4,7 +4,7 @@
   <id>https://mickhat.xyz/</id>
   <title>Mickhat.xyz</title>
   <subtitle>A Personal Techblog where I'll publish tutorials or personal impressions on this site.</subtitle>
-  <updated>2024-03-13T01:12:16+01:00</updated>
+  <updated>2024-03-13T01:17:16+01:00</updated>
   <author>
     <name>Mickhat</name>
     <uri>https://mickhat.xyz/</uri>
@@ -22,9 +22,9 @@
   <entry>
     <title>Macless Haystack for Findmy Flipper Setup</title>
     <link href="https://mickhat.xyz/posts/Macless-Haystack/" rel="alternate" type="text/html" title="Macless Haystack for Findmy Flipper Setup" />
-    <published>2024-03-11T08:30:00+01:00</published>
+    <published>2024-03-13T00:15:00+01:00</published>
   
-    <updated>2024-03-11T08:30:00+01:00</updated>
+    <updated>2024-03-13T00:15:00+01:00</updated>
   
     <id>https://mickhat.xyz/posts/Macless-Haystack/</id>
     <content src="https://mickhat.xyz/posts/Macless-Haystack/" />
@@ -150,7 +150,7 @@ NordVPN is a popular VPN provider that offers a variety of features to protect u
     <link href="https://mickhat.xyz/posts/setting-up-a-samba-share/" rel="alternate" type="text/html" title="Setting Up a Samba Share" />
     <published>2023-04-29T22:57:00+02:00</published>
   
-    <updated>2023-04-29T22:57:00+02:00</updated>
+    <updated>2024-03-13T01:14:18+01:00</updated>
   
     <id>https://mickhat.xyz/posts/setting-up-a-samba-share/</id>
     <content src="https://mickhat.xyz/posts/setting-up-a-samba-share/" />

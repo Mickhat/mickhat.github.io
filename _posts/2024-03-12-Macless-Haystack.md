@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Macless Haystack for Findmy Flipper Setup
-date: '2024-03-11 09:30:00 +0200'
+date: '2024-03-13 01:15:00 +0200'
 categories: [Tutorials, Flipper Zero]
 tags: [Flipper Zero]
 ---
