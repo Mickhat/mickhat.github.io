@@ -100,7 +100,11 @@ You can either use the pre hosted one on [Github pages](https://dchristl.github.
 
 If you need to adjust the Macless Haystack endpoint, click on the gear icon on the top right corner and change the URL.
 
-To add a Flipper, click on the Accessories tab and select the + sign. Click import from JSON file and select the `PREFIX_devices.json` file.
+To add a Flipper, click on the Accessories tab and select the + sign. Click import Accessory and paste the private key from the .keys file.
+The ID can be any number you want, as long as its unique for yourself.
+
+![import Accessory](/assets/haystack/Import.png)
+
 
 ## adding the .keys file 
 
