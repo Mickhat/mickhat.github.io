@@ -2,8 +2,8 @@
 layout: post
 title: 'SysReptor Pro: Revolutionizing Reporting for Penetration Testing'
 date: '2024-03-15 12:00:00 +0200'
-categories: [Reviews, Sysreptor]
-tags: [Reviews]
+categories: [Review, Sysreptor]
+tags: [Review]
 ---
 
 
