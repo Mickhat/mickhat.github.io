@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 'Neptune 4 Pro 3D Printer'
-date: '2024-06-11 12:00:00 +0200'
+title: Neptune 4 Pro Review
+date: '2024-06-11 09:30:00 +0200'
 categories: [Review, 3D Printer]
 tags: [Review]
 ---

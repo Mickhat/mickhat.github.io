@@ -4,7 +4,7 @@
   <id>https://mickhat.xyz/</id>
   <title>Mickhat.xyz</title>
   <subtitle>A Personal Techblog where I'll publish tutorials or personal impressions on this site.</subtitle>
-  <updated>2024-06-11T14:36:02+02:00</updated>
+  <updated>2024-06-11T14:53:48+02:00</updated>
   <author>
     <name>Mickhat</name>
     <uri>https://mickhat.xyz/</uri>
@@ -17,6 +17,48 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Neptune 4 Pro Review</title>
+    <link href="https://mickhat.xyz/posts/Neptune-4-Pro-Review/" rel="alternate" type="text/html" title="Neptune 4 Pro Review" />
+    <published>2024-06-11T09:30:00+02:00</published>
+  
+    <updated>2024-06-11T09:30:00+02:00</updated>
+  
+    <id>https://mickhat.xyz/posts/Neptune-4-Pro-Review/</id>
+    <content src="https://mickhat.xyz/posts/Neptune-4-Pro-Review/" />
+    <author>
+      <name>Mickhat</name>
+    </author>
+
+  
+    
+    <category term="Review" />
+    
+    <category term="3D Printer" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Neptune 4 Pro Review: A Game Changer in 3D Printing
+
+The Neptune 4 Pro is an impressive addition to the world of 3D printing, particularly for beginners and enthusiasts alike. As someone who has primarily used the CR-6 SE before, transitioning to the Neptune 4 Pro was a seamless and exciting experience.
+
+Unboxing and Setup
+
+Unboxing the Neptune 4 Pro was a delight. The packaging was sturdy and ...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -179,50 +221,6 @@ Introduction
 
 
 NordVPN is a popular VPN provider that offers a variety of features to protect users’ privacy and security online. It...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Setting Up a Samba Share</title>
-    <link href="https://mickhat.xyz/posts/setting-up-a-samba-share/" rel="alternate" type="text/html" title="Setting Up a Samba Share" />
-    <published>2023-04-29T22:57:00+02:00</published>
-  
-    <updated>2024-03-13T01:14:18+01:00</updated>
-  
-    <id>https://mickhat.xyz/posts/setting-up-a-samba-share/</id>
-    <content src="https://mickhat.xyz/posts/setting-up-a-samba-share/" />
-    <author>
-      <name>Mickhat</name>
-    </author>
-
-  
-    
-    <category term="Tutorials" />
-    
-    <category term="Samba Setup" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Setting Up a Samba Share with Port Forwarding
-
-Introduction
-
-In this beginner-friendly tutorial, I will guide you through setting up a Samba share with port forwarding. By the end, you will be able to install and configure Samba on your Linux server, configure port forwarding on your router, and access the Samba share from your client device.
-
-Prerequisites
-
-Before we begin, ensure that you hav...
     </summary>
   
 
